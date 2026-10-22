@@ -1,0 +1,21 @@
+schema_version = "1.3"
+allow_internet = true
+
+[task]
+name = "local/charged-beamline"
+authors = [{ name = "xyj" }]
+difficulty = "hard"
+
+[agent]
+entrypoint = "solution/solve.sh"
+
+[environment]
+dockerfile = "environment/Dockerfile"
+network_mode = "public"
+
+[verifier]
+entrypoint = "tests/test.sh"
+
+[metadata]
+tags = ["physics", "charged-particles", "simulation", "numerical-methods"]
+description = "Repair a deterministic two-dimensional charged-particle beamline simulator with Boris integration, circular aperture losses, diagnostics, strict validation, and atomic output."

@@ -1,0 +1,27 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments, builds, and coverage
+.venv/
+venv/
+.build/
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Local logs and operating-system metadata
+*.log
+.DS_Store
+
+# Harbor/local runtime artifacts
+harbor-jobs/
+artifacts/
+evidence/
+run/
+logs/
